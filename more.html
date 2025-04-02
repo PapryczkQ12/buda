@@ -90,4 +90,12 @@
 
     <script src="assets/bar.js"></script>
     <script src="assets/manifest.js"></script>
+    <script>
+        // Simulate redirection after completing id.html
+        document.querySelectorAll('.bottom_element_grid[send="home"]').forEach(element => {
+            element.addEventListener('click', () => {
+                window.location.href = 'home.html'; // Redirect to home.html
+            });
+        });
+    </script>
 </body>
